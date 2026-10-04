@@ -4,14 +4,14 @@
 A implementation of the marching cubes algorithm as a graphical representation for a 2D height map.
 
 ## Features
-- **Marching Cubes**: generating a 3D mesh for the pipeline representing the terrain
+- **Landscape**: generating a 3D mesh for the pipeline representing the terrain of the landscape with landscape and mountains
 - **Real-time Rendering**: Uses a basic 3D rendering engine to display the terrain in a window.
 - **Camera Control**: Allows user interaction with the camera to rotate, zoom, and pan through the simulation.
 - **Debugging Information**: Displays the current position of the camera and some statistics about the rendering process.
 
 ## Project Structure
 ```
-Gui_Ocean/
+Gui_Landscape/
 ├── build/              # .exe files produced by Main.c
 ├── src/                # Source code directory
 │   └── Main.c          # Entry point of the application
@@ -34,7 +34,7 @@ These commands will set up and compile the project, producing the necessary exec
 
 ### Building on Linux
 ```sh
-cd Gui_Ocean/
+cd Gui_Landscape/
 make -f Makefile.linux all
 
 # To run the application:
@@ -43,7 +43,7 @@ make -f Makefile.linux all
 
 ### Building on Windows
 ```sh
-cd Gui_Ocean/
+cd Gui_Landscape/
 make -f Makefile.windows all
 
 # To run the application:
@@ -52,7 +52,7 @@ make -f Makefile.windows all
 
 ### Building on Wine
 ```sh
-cd Gui_Ocean/
+cd Gui_Landscape/
 make -f Makefile.wine all
 
 # To run the application:
@@ -61,7 +61,7 @@ wine build/Main.exe
 
 ### Building for WebAssembly
 ```sh
-cd Gui_Ocean/
+cd Gui_Landscape/
 make -f Makefile.web all
 
 # To run the application in a web browser:
