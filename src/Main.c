@@ -118,7 +118,7 @@ void Update(AlxWindow* w){
 	//PerlinNoise_Offset_Set(pos);
 
 	Vector_Clear(&world.trisIn);
-	MarchingCubes_Render2D_CF(Landscape_Height,&world.trisIn,cam.p.x,cam.p.z,FIELDX,FIELDZ,height,Landscape_Color);
+	MarchingCubes_Render2D_CF(Landscape_Height,&world.trisIn,(int)cam.p.x,(int)cam.p.z,FIELDX,FIELDZ,height,Landscape_Color);
 
 	Clear(LIGHT_BLUE);
 	World3D_Update(&world,cam.p,(Vec2){ GetWidth(),GetHeight() });
